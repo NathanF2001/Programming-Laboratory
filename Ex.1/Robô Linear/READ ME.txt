@@ -1,0 +1,13 @@
+O robô linear foi implementado na lógica de anulamento entre o comando de ir para frente e para trás.
+Nesse caso, toda ver que acha a string "TF" (equivalente à trás e frente) ou "FT" (equivalente à frente e trás)
+o algoritmo iria desconsiderar esses comandos, tornando eles desprezíveis. 
+
+Portanto, para implementar dessa forma. O meu algoritmo foi baseado em transformar essas string desprezíveis
+em string vazias.
+No python tem um método chamado .replace, a qual você coloca como argumentos a string que você quer retirar(Old)
+e a string a qual você quer substituir (New).
+Esse método foi repetido até que existisse esse tipo de String
+
+Ao final do algoritmo só sobraria ou string com apenas T's ou F's ou vazia(no caso o robô não saiu do lugar).
+Assim so resta contar o tamanho da string, a qual foi utilizado a função len() do python, assim mostrando a taxa de variação
+do espaço do robô.
