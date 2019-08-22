@@ -1,0 +1,27 @@
+O algoritmo do mapa ele é baseado no teorema das 4 cores. Portanto já tem o máximo que o mapa pode ter de cores mínimas.
+É importante lembrar que o mapa pode ser representado como um grafo.
+
+Por ser entradas relativamente pequenas, o método de como é feito a entrada é suficiente. Entretanto se fosse para
+representar de forma muito grande seria necessário outro método de entrada, caso contrário iria demorar muito tempo para colocar todas as entradas.
+
+É importante salientar que é recomendado que o usuário utilize o programa duas vezes. Em todos casos de teste, teve situações em que o algoritmo utilizava 
+caminhos inadequados e acabava dando uma saída errada, isso o torna um algoritmo não totalmente certo, por isso é necessário que utilize duas vezes,
+entretanto isso não garante que esteja isento de erro. É recomendado utilizar a forma de contagem de cada uma da província de acordo com a imagem anexada
+ (prioridade de cima para baixo primeiro e logo após anda da esquerda para direita). Essa forma foi a qual o algoritmo deu a resposta exata da questão proposta
+da OBI.A outra forma recomendada é o inverso da primeira (prioridade da esquerda para direita e logo após de cima para baixo)
+
+Inicialmente é perguntado ao usuário quantas províncias existem (que em um grafo seria relativo os vértices), logo após é pedido a cada uma quantas
+províncias adjacentes tem em cada uma delas.
+
+Para saber quantas cores são necessárias, tem que denominar a cada província uma cor e assim ao final do algoritmo diz quantas cores foram
+utilizadas.
+Há uma ordem de prioridades. Primeiramente tem que se ordenar decrescentemente de acordo com a quantidade de províncias vizinhas que tem cada 
+uma delas. Logo após, é denominado uma cor a cada uma, começando com as que tem mais adjacentes e terminando com a que tem menos.
+
+É guardado em arranjos as cores que cada províncias tem como adjacente, para que quando chegar sua vez de ser pintada ela ser diferente das outras.
+
+Em cada províncias é colocado um range(4), ele representa as quatro cores de acordo com o teorema. Elas poderiam ser representadas também em um arranjo
+ [0,1,2,3].
+
+Após pintada todo o mapa ou ter chegado a 4º cor utilizada, o algoritmo retorna o valor equivalente ao mínimo de cores utilizadas. Assim encerrando o algoritmo
+ imprimindo o valor equivalente no console.
