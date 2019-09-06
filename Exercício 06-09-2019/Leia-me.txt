@@ -1,0 +1,25 @@
+Esse algoritmo é baseado nas ideias da sala de aula. Ele é baseado no algoritmo de Welsh Powel e tem como um de seus principios o teorema
+das quatro cores.
+
+O algoritmo ele pede uma entrada que pede quantas provincias existem no mapa.
+Logo após é necessário que o usuário dê as provincias vizinhas a cada um das provincias.
+
+O exemplo de entrada a seguir, que serve como exemplo, se encontra de acordo com arquivo que foi enumerado com o mapa da questão da 
+OBI.
+
+Entradas		Explicação
+8 		#Números de provincias;
+4,2		#Provincia 1: provincias 4 e 2 como adjacentes;
+1,4,5,3		#Provincia 2: provincias 1,4,5 e 3 como adjacentes
+2,5,6,7,8		#Provincia 3: provincias 2,5,6,7,8 como adjacentes;
+1,2,5,6,7		#Provincia 4: provincias 1,2,5,6 e 7 como adjacentes;
+2,4,6,3		#Provincia 5: provincias  2,4,6 e 3 como adjacentes;
+4,5,3,7		#Provincia 6: provincias  4,5,3 e 7 como adjacentes;
+4,6,3,8		#Provincia 7: provincias  4,6,3 e 8 como adjacentes;
+7,3		#Provincia 8: provincias  7 e 3 como adjacentes;
+
+Logo após é guardado em um arranjo os valores adjacentes de cada provincias ordenados pelo grau do vértice.
+
+Assim começa o algoritmo em si, ele começa o laço no arranjo acima, pinta o primeiro valor e pinta todas as regiões adjacente a ele;
+O segundo valor é a mesma coisa, porém é checado se ele ja foi pintado e se seus adjacentes forão pintados, e isso se aplica as 'n' provincias até
+que é imprimido o valor mínimo de cores pintadas. 
