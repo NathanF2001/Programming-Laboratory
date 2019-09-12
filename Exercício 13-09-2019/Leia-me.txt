@@ -1,0 +1,12 @@
+Esse algoritmo genérico é para apenas situações que haja apenas um caminho para chegar ao destino, conforme como foi proposto pela
+questão da OBI:
+
+https://olimpiada.ic.unicamp.br/pratique/p1/2017/f3/visita/resultado/
+
+Para encontrar a distância foi utilizado a lógica do algoritmo de busca por profundidade(breadth first search)
+Funciona da seguinte forma:
+Inicialmente o primeiro vertice analisado é o inicio;
+Há um fila que é preenchida por elementos que são vizinhos ao vértice analisado e que não foram visitados;
+A distância do vertice vizinho ao inicio é calculada de acordo com: (distância percorrida até o vértice analisado)+(distância do vertice analisado até seu vizinho)
+Logo após esse processo é retirado o primeiro item da fila para que possa ser analisado;
+Repete-se esse processo até que a cidade analisa seja o destino.
