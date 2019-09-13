@@ -1,12 +1,14 @@
-Esse algoritmo genÈrico È para apenas situaÁıes que haja apenas um caminho para chegar ao destino, conforme como foi proposto pela
-quest„o da OBI:
+Exemplo de entrada √© baseado na quest√£o da OBI.
+Esse algoritmo gen√©rico √© para apenas situa√ß√µes que haja apenas um caminho para chegar ao destino, conforme como foi proposto pela
+quest√£o da OBI:
+
 
 https://olimpiada.ic.unicamp.br/pratique/p1/2017/f3/visita/resultado/
 
-Para encontrar a dist‚ncia foi utilizado a lÛgica do algoritmo de busca por profundidade(breadth first search)
+Para encontrar a dist√¢ncia foi utilizado a l√≥gica do algoritmo de busca por profundidade(breadth first search)
 Funciona da seguinte forma:
-Inicialmente o primeiro vertice analisado È o inicio;
-H· um fila que È preenchida por elementos que s„o vizinhos ao vÈrtice analisado e que n„o foram visitados;
-A dist‚ncia do vertice vizinho ao inicio È calculada de acordo com: (dist‚ncia percorrida atÈ o vÈrtice analisado)+(dist‚ncia do vertice analisado atÈ seu vizinho)
-Logo apÛs esse processo È retirado o primeiro item da fila para que possa ser analisado;
-Repete-se esse processo atÈ que a cidade analisa seja o destino.
+Inicialmente o primeiro vertice analisado √© o inicio;
+H√° um fila que √© preenchida por elementos que s√£o vizinhos ao v√©rtice analisado e que n√£o foram visitados;
+A dist√¢ncia do vertice vizinho ao inicio √© calculada de acordo com: (dist√¢ncia percorrida at√© o v√©rtice analisado)+(dist√¢ncia do vertice analisado at√© seu vizinho)
+Logo ap√≥s esse processo √© retirado o primeiro item da fila para que possa ser analisado;
+Repete-se esse processo at√© que a cidade analisa seja o destino.
