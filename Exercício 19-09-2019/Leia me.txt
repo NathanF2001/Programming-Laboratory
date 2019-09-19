@@ -1,0 +1,61 @@
+O algoritmo tem em base o algoritmo anterio (busca por largura) só que aprimorado.
+Esse é o algoritmo de busca de menor caminho em um grafo. Ele é baseado totalmente no algoritmo de Dijkstra em sua implementação.
+Um exemplo de mapa está anexado a esta pasta.
+As partes da cidade é representada por número dentro do programa, e são numerada da seguinte forma:
+(A ordem de numeração dos lugares não importa para este algoritmo)
+
+1 - Lar
+2 - Supermercado
+3 - Escola
+4 - Hotel
+5 - Zoológico
+6 - Faculdade
+7 - Museu
+8 - Banco
+9 - Praia
+10 - Cinema
+
+A entrada do algoritmo é da seguinte forma:
+v a i f 			-> Primeira linha
+p1 p2 d			-> As linhas restantes*,
+
+*(Essa linha vai ser repeti 'a' vezes)
+
+Onde:
+v : número de lugares(vértices)
+a : número de ligações entre cidade(arestas)
+i : ponto de inicio
+f : ponto de destino
+
+
+p1 : região p1
+p2 : região p2
+d : distancia entre p1 e p2
+
+
+Exemplo de entrada:
+
+10 21 1 9
+1 2 5
+1 3 4
+3 4 2
+2 4 3
+2 5 12
+2 6 7
+4 5 11
+4 6 10
+4 7 15
+3 6 7
+3 7 12
+6 5 5
+6 8 9
+6 9 8
+6 7 6
+7 10 6
+10 9 3
+8 9 3
+7 8 10
+5 8 6
+5 7 10
+
+
