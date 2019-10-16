@@ -1,0 +1,9 @@
+O algoritmo para encontrar o corte que terá o maior número de pedaços funciona da seguinte forma:
+Percorre o arrajo que contêm as alturas na ordem que foram abordadas e assim ver quais colunas são picos e vales.
+Assim são colocadas as alturas em ordem crescente
+O motivo para encontrar pico e vales e por em ordem crescente é pelo fato que quando há um vale, necessariamente,
+há um pedaço criado(se passar um linha relativamente na altura da coluna do vale ou superior). É importante entender que passando pelo arranjo
+ordenado vai pegando os vales que adicionado as quantidade de pedaços em um unico corte, porém se há no meio do arranjo um pico, significa dizer 
+que um pedaço que fazia parte desses cortes em uma certa altura (menor que altura do pico) não vai mais contabilizar como um pedaço(aparti da altura
+ maior ou igual ao pico), portanto retira uma unidade dos numero de pedaços.
+A imagem explica a forma que ele funciona.

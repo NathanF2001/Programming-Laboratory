@@ -1,0 +1,5 @@
+O algoritmo vai funciona da seguinte forma:
+Será uma busca em largura( Algoritmo de Dijkstra) a qual irá calcular todos os menores caminhos do servidor para todos vertices ( para encontrar
+o maior caminho, sendo assim o maior ping)
+Para encontrar o menor ping é bastante simples pois trata de alguma ilha vizinha ao servidor, porém já que o algoritmo calcula a menor distancia de 
+todos os vertices, pega-se o vetor que tem todas as distancia e pega o valor max e minimo de cada um.
