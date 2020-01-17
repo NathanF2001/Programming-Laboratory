@@ -56,7 +56,6 @@ class Menor_caminho(object):
             c1,c2,d = map(lambda i: int(i), input().split(' '))
             self.grafo[c1-1].append((c2-1,d))
             self.grafo[c2-1].append((c1-1,d))
-        
         return
 
     def Try_Change(self,i,k):

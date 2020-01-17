@@ -1,3 +1,4 @@
+from time import time
 def achar_maior_e_menor_caminho(vertice_principal,N,caminhos):
     '''
         Algoritmo de achar o menor e maior caminho ( Baseado na busca em largura/ Algoritmo de Dijskara.
@@ -59,7 +60,9 @@ def grafo():
 
         return achar_maior_e_menor_caminho(S-1,N,grafo)
 
+
 a = grafo()
+
 maior = None
 menor = None
 for k in a:
